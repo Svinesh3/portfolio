@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>John Carter | Frontend Developer & UI Designer</title>
+    <meta name="description" content="Professional portfolio of John Carter - Frontend Developer & UI Designer">
+    <meta name="keywords" content="frontend developer, UI designer, web developer, portfolio, React, JavaScript">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="container nav-container">
+            <div class="nav-left">
+                <a href="#" class="logo">SVC</a>
+            </div>
+            
+            <div class="nav-center">
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <!-- <li><a href="#blogs">Blogs</a></li> -->
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            
+            <div class="nav-right">
+                <div class="nav-actions">
+                    <button class="theme-toggle" id="themeToggle">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                    <a href="public/resume.pdf" class="btn btn-download-resume" download>
+                        <i class="fas fa-download"></i>
+                        <span>Resume</span>
+                    </a>
+                </div>
+            </div>
+            
+            <button class="menu-toggle" id="menuToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container hero-content">
+            <div class="hero-text">
+                <h1>Shiva Vinesh</h1>
+                <h2>Software Developer & Data Scientist</h2>
+                <p>I create end-to-end digital products that are fast, scalable, and smart. With a strong foundation in full-stack development, data science, and machine learning, I love building solutions that learn, adapt, and deliver real value.</p>
+                <div class="hero-btns">
+                    <a href="#contact" class="btn">Get In Touch</a>
+                    <a href="public/resume.pdf" class="btn btn-accent" download>Download Resume</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="profile-container">
+                    <div class="profile-initials">SVC</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Hello! I’m Shiva Vinesh, a full-stack developer and data enthusiast who enjoys building smart and scalable digital solutions. I recently graduated with a degree in Computer Science and have been growing my skills in backend development, data science, and machine learning.</p>
+                    <p>My journey into end-to-end development began during my university years when I built my first data-driven application. Since then, I’ve been exploring modern frameworks, cloud technologies, and machine learning techniques to create products that learn, adapt, and deliver real value.</p>
+                    <p>When I'm not coding, you can find me exploring new design trends, reading tech blogs, or hiking in nature to recharge my creative batteries.</p>
+                    <a href="#contact" class="btn">Let's Connect</a>
+                </div>
+                <div class="about-image">
+                    <img src="images/profile.avif" alt="John Carter" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+<section class="skills" id="skills">
+    <div class="container">
+        <h2>My Skills</h2>
+        <div class="skills-container">
+
+            <div class="skill-card fade-in">
+                <div class="skill-icon">
+                    <i class="fas fa-layer-group"></i>
+                </div>
+                <h3>Full-Stack Development</h3>
+                <p>JavaScript, Django, Node.js, Express, React, Databases, API Development</p>
+            </div>
+
+            <div class="skill-card fade-in">
+                <div class="skill-icon">
+                    <i class="fas fa-pencil-ruler"></i>
+                </div>
+                <h3>UI/UX Design</h3>
+                <p>Figma, Wireframing, Prototyping, User Experience Design</p>
+            </div>
+
+            <div class="skill-card fade-in">
+                <div class="skill-icon">
+                    <i class="fas fa-chart-line"></i>
+                </div>
+                <h3>Data Science</h3>
+                <p>Python, Pandas, NumPy, Data Analysis, Power BI, Visualization</p>
+            </div>
+
+            <div class="skill-card fade-in">
+                <div class="skill-icon">
+                    <i class="fas fa-robot"></i>
+                </div>
+                <h3>Machine Learning</h3>
+                <p>Scikit-Learn, TensorFlow, Model Training, Predictive Analytics</p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+        <div class="container">
+            <h2>My Projects</h2>
+            
+            <!-- Project Filters -->
+            <div class="project-filters" id="projectFilters">
+                <!-- Filters will be dynamically added -->
+            </div>
+            
+            <!-- Projects Container -->
+            <div class="projects-container" id="projectsContainer">
+                <div class="projects-loading">
+                    <div class="spinner"></div>
+                    <span>Loading projects...</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="education" id="education">
+        <div class="container">
+            <h2>Education</h2>
+            <div class="education-timeline">
+                <div class="education-item fade-in">
+                    <div class="education-date">2022 - 2025</div>
+                    <h3>Bachelor of Technology in Data Science</h3>
+                    <p>ACE Engineering College</p>
+                    <p>GPA: 8.2/10.0</p>
+                </div>
+                <div class="education-item fade-in">
+                    <div class="education-date">2019 - 2022</div>
+                    <h3>Diploma in Electronic Engineering and Technology</h3>
+                    <p>Ellenki College of Engineering and Technology</p>
+                    <p>GPA: 8.47/10.0</p>
+                </div>
+                <div class="education-item fade-in">
+                    <div class="education-date">2023</div>
+                    <h3>Frontend Development Certification</h3>
+                    <p>CodeCamp Online</p>
+                    <p>Specialized in React and Modern JavaScript</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blogs Section
+    <section class="blogs" id="blogs">
+        <div class="container">
+            <h2>Latest Blogs</h2>
+            <div class="blogs-container" id="blogsContainer">
+                <!-- Blogs will be dynamically loaded -->
+            </div>
+        </div>
+    </section> 
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2>Get In Touch</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div>
+                            <h3>Location</h3>
+                            <p>Hyderabad , TElangana</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div>
+                            <h3>Email</h3>
+                            <p>vinesh.doddi07@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div>
+                            <h3>Phone</h3>
+                            <p>+91 9515738584</p>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/vinesh-doddi-9972812b5?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://github.com/Svinesh3" class="social-link"><i class="fab fa-github"></i></a>
+                        <a href="https://www.reddit.com/user/Proud-Database2406/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button" class="social-link"><i class="fab fa-reddit"></i></a>
+                        <a href="https://youtube.com/@shiva21291?si=aziFcc0OITzwZRsi" class="social-link"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Phone Number</label>
+                            <input type="tel" id="subject" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" class="form-control" required></textarea>
+                        </div>
+                        <button type="submit" class="btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="social-links">
+                <a href="https://www.linkedin.com/authwall?trk=bf&trkInfo=AQFFU7SlNdu_DwAAAZqbkZoQbbPaAB77uFCgvuA83MeHFYUmX0Ywi6KFWqufgbhRU7ken7L7aAeD5qtd9hOHUAgGimF-doFuUGZh-Nq-FhSp7CCKPi6mDmJaXOS04mONKKJtFvg=&original_referer=&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fin%2Fvinesh-doddi-9972812b5%3Futm_source%3Dshare%26utm_campaign%3Dshare_via%26utm_content%3Dprofile%26utm_medium%3Dandroid_app" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://github.com/Svinesh3" class="social-link"><i class="fab fa-github"></i></a>
+                <a href="https://www.reddit.com/user/Proud-Database2406/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button" class="social-link"><i class="fab fa-reddit"></i></a>
+                <a href="https://youtube.com/@shiva21291?si=aziFcc0OITzwZRsi" class="social-link"><i class="fab fa-youtube"></i></a>
+            </div>
+            <p class="copyright">&copy; 2023 John Carter. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/theme.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
